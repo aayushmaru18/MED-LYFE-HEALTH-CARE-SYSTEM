@@ -1,0 +1,28 @@
+
+.panel-title{
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+
+.dp-btn {
+    padding: 13px 20px 12px;
+    background-color: #343a40;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px; 
+  }
+  
+.dp-btn:hover {
+      border: 1px solid #343a40;
+      background-color: transparent;
+      color: #343a40; 
+  }
+
+.custom-select  {
+    border: 1px solid #343a40 !important;
+  }

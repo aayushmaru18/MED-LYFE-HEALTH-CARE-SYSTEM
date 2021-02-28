@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/thankyou.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class=thankyoucontent>
+ <div class="wrapper-1">
+    <div class="wrapper-2">
+       <img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" alt="thank-you-envelope" border="0">
+     <h1>Thank you!</h1>
+      <p>Your appoitnment has been confirmed.Further details will be forwarded you via SMS.</p> 
+      <button class="go-home"><a href="{{ url_for('index') }}">
+        Home Page</a>
+      </button>
+    </div>
+</div>
+</body>
+</html>

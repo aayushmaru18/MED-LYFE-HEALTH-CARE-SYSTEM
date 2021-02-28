@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% set active_page = "index" %}
+{% block content %}
+  <!--==========================Intro Section============================-->
+  <section id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="intro-info text-center">
+            <h2>Disease Prediction System</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+<!-- Start About us -->
+<section id="about-us">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+      <div class="about-us-area">
+      <div class="title">
+        <h2>About MedLyfe</h2>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="about-us-left">
+                <h2>Welcome to <span> MedLyfe </span></h2>
+                <h3>"The care you need. The compassion you deserve"</h3>
+                <p>
+                  The lockdown that took place due to the Covid-19 all around the country had some severe impact on people. Most of them were afraid to go outside of their homes. People were reluctant to go even for a routine checkup.</p>
+                  <p>
+                    The aim of this project is to provide an effective solution for the same. The patient has to enter the symptoms and then our Machine-Learning based Web Application will update them about the disease which they are suffering from and suggest some home remedies and  medicines for the same. We will also notify the patient about the disease and its remedies and medicines with an SMS and E-MAIL notification.</p> 
+                    <p>
+                      We have also provided a functionality which allows the patient to see the nearest hospital to this location. The main idea behind this project is to inform the patient about the disease he his suffering from and provide effective solutions to cure it and  also to narrow down the load on the offline health centres, clinics and hospitals as well.
+                    </p>         
+              </div>
+          </div>
+        <div class="col-md-6">
+        <div class="about-us-right">                
+         <div class="about-images">
+          <img class="about-main" height="500" width="500" src="../static/images/about.jpg" alt="About Main Image">
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+  <!-- End About us -->
+  
+{% endblock %}

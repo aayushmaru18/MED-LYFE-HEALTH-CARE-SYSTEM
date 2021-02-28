@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap');
+html
+{
+  height: 100vh;
+
+}
+body {
+  background: #fff;
+  height: 100%;
+ 
+}
+
+a {
+  transition: 0.5s;
+  
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.navbar-brand
+{
+  font-family: 'Comic Neue', cursive;
+  font-size: 22px;
+  color: #fff !important;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 50px;
+  width: auto;
+}
+.nav-item .nav-link
+{
+  font-family: 'Comic Neue', cursive;
+  font-size: 20px;
+  color: #fff !important;
+
+}
+.nav-item .nav-link:hover
+{
+  color: #0a98c0 !important;
+}
+.navbar-toggler { 
+	border-color: white !important; 
+} 
+.navbar-toggler-icon { 
+ background-image: url( "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important; 
+} 
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+  width: 100%;
+  height: 100%;
+  background: #f5f8fd url("../images/header.jpeg") center top no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-info h2 {
+  color: #413e66;
+  margin: auto;
+  padding-top: 30px;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Merienda One', cursive;
+}
+
+#intro .intro-info h2 span {
+  color: #1bb1dc;
+}
+
+/*------------------------------------------------------------------
+    About
+-------------------------------------------------------------------*/
+#about-us {
+	float: left;
+	width: 100%;
+	padding:40px 0;
+	background-color: #ffffff;
+  }
+#about-us .about-us-area {
+	float: left;
+	width: 100%;
+}
+#about-us .about-us-area .about-us-left {
+	padding-top: 20px;
+	width: 100%;
+}
+#about-us .about-us-area .about-us-left h2 {
+	font-size: 30px;
+  color: #333333;
+  font-weight: 500;
+  font-family: 'Comic Neue', cursive;
+}
+#about-us .about-us-area .about-us-left h2 span {
+  color: #067446;
+}
+#about-us .about-us-area .about-us-left h3 {
+	font-size: 22px;
+  color: #067446;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#about-us .about-us-area .about-us-left p {
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+	text-align: center;
+}
+
+.title h2 {
+  color: #413e66;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Merienda One', cursive;
+}
+.about-images img {
+    border: 10px solid  #dce0e7;
+    box-sizing: border-box;
+	  max-width: 100%;
+}
+
+
+.about-images {
+    text-align: center;
+    position: relative;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+  #intro .intro-info {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro {
+    width: 100%;
+  }
+
+  #intro .container {
+    height: auto !important;
+  }
+
+  #intro .intro-info {
+    padding:10px 30px;
+  }
+
+  #intro .intro-info h2 {
+    font-size: 32px;
+    padding-top: 90px;
+  }
+  
+}
+.panel-title{
+  font-family: 'Comic Neue', cursive;
+  font-size: 30px;
+  color: #ffffff;
+  
+}
+
+#footer {
+  padding: 0px 0 50px !important;
+  color: #fff;
+  background-color: #343a40;
+}
+.logo img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+.footer-info {
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding-top: 20px; 
+  position: relative;
+}
+.footer-info h3 {
+    color: #fff;
+    font-size: 22px;
+    border-left: solid #fff 5px;
+    padding: 0 0 0 15px;
+    margin-bottom: 24px;
+}
+.footer-info p {
+  margin-bottom: 15px;
+  padding-right: 10px;
+  color: #fff;
+}
+
+.subcriber-info {
+  padding-top: 20px;
+}
+.subcriber-info h3 {
+  color: #fff;
+  font-size: 22px;
+  border-left: solid #fff 5px;
+  padding: 0 0 0 15px;
+  margin-bottom: 24px;
+}
+.subcriber-info p {
+  color: #fff;
+}
+.newsletter-form input {
+  display: inline-block;
+  height: 50px;
+  width: 80%;
+  padding: 5px 20px;
+  background: rgb(238, 238, 238);
+  border-radius: 0px;
+  border: none;
+  float: left;
+  box-shadow: none;
+}
+.newsletter-form .mc-submit {
+  height: 50px;
+  width: 20%;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, rgb(29, 134, 223) 0%, rgb(57, 180, 154) 100%);
+  border: none;
+  font-size: 24px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+
+

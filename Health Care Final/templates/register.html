@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% set active_page = "register" %}
+{% block content %}
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/register.css') }}"/>
+{% endblock stylesheet %}
+<div class="container">
+    <div class="title" style="margin-top: 100px;">
+        <h2>Registeration Form</h2>
+      </div>
+    <div class="card register">
+      <div class="row ">
+        <div class="col-md-7">
+          <img src="https://www2.deloitte.com/content/dam/Deloitte/global/Images/promo_images/gx-lshc-global-health-care-p.jpg" alt="login" class="register-img">
+        </div>
+        <div class="col-md-5">
+          <div class="card-body">
+            <form action="{{ url_for('disease_prediction') }}" method="POST">
+                <div class="form-group">
+                  <label for="first-name">First Name :</label>
+                  <input type="name" name="first-name" id="first-name" class="form-control" placeholder="Enter your Fisrt Name" required>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="last-name">Last Name :</label>
+                  <input type="name" name="last-name" id="last-name" class="form-control" placeholder="Enter your Last Name" required>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="email">Email :</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email">
+                </div>
+                <div class="form-group mb-4">
+                  <label for="mobile">Mobile Number:</label>
+                  <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Enter your Mobile Number" required>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="pincode">Pincode:</label>
+                  <input type="text" name="pincode" id="pincode" class="form-control" placeholder="Enter your Pincode " required>
+                </div>
+                <div class="form-group">
+                  <div class="maxl">
+                      <label class="radio inline mr-5">Gender: <br><br>
+                          <input type="radio" name="gender" value="male">
+                          <span> Male </span> 
+                      </label>
+                      <label class="radio inline"> 
+                          <input type="radio" name="gender" value="female">
+                          <span>Female </span> 
+                      </label>
+                  </div>
+                </div>
+                
+                <button class="btn btn-block register-btn mb-4" type="submit" value="submit">Register</button>
+              
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+{% endblock %}

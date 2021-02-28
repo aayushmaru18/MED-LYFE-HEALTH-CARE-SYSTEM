@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/result.css') }}"/>
+{% endblock stylesheet %}
+<div class="container">
+    <div class="title" style="margin-top: 100px;">
+        <h2>Results and Remedies For the Disease</h2>
+      </div>
+    <div class="card result mb-5">
+        <div class="panel-heading bg-dark">
+            <div class="panel-title text-center p-2">Your Diagnosed Disease is :</div>
+        </div>  
+    <div class="card-body">
+        <div class="alert alert-danger text-center" role="alert">
+           From the system it seems like you are suffering from <b>{{ predicted_disease }} </b>.
+        </div>
+
+        <p>{{ txt }}</p>
+    </div>
+    </div>
+
+
+    <div class="card result mb-5">
+        <div class="panel-heading bg-dark">
+            <div class="panel-title text-center p-2">Your Remedies for the Disease are :</div>
+        </div>  
+        <div class="card-body">
+            <div class="container ">
+                <div class="row">
+                    {% for i in txt2 %}
+                    <div class="col-12 col-md-6 ">
+                        <div class="card remedies">
+                            <div class="card-body">
+                                <span class="card-title">Remedie</span>
+                                <p class="card-text">{{ i }}</p>
+                             </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="button text-right">
+        <a href="{{ url_for('hospital') }}" class="btn btn-dark hospital-btn dp-btn mb-4">Check Out for Nearby Hospital</a>
+    </div>
+</div>  
+                       
+{% endblock %}

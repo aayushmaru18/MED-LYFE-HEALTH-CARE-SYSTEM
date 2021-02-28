@@ -1,0 +1,39 @@
+
+.result{
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  }
+.remedies {
+    transition: all 100ms ease-in-out;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
+  }
+  .remedies:hover {
+    transform: scale(1.04);
+    border: none;
+  }
+.card-title{
+    color: #067446;
+    font-size: 20px;
+}
+.card-text{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.hospital-btn {
+  padding: 13px 20px 12px;
+  background-color: #343a40;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 24px; 
+}
+
+.hospital-btn:hover {
+    border: 1px solid #343a40;
+    background-color: transparent;
+    color: #343a40; 
+}

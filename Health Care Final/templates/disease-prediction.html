@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/disease_pred.css') }}"/>
+{% endblock stylesheet %}
+<div class="container">
+    <div class="title" style="margin-top: 100px;">
+        <h2>Diseases Predicition</h2>
+      </div>
+    <div class="card mb-5">
+        <div class="panel-heading bg-dark">
+            <div class="panel-title text-center p-3">Enter Your Symptoms to Check the Diseases.</div>
+        </div>  
+        <form action="{{ url_for('diseases_detected') }}" method="POST" class="p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="country">Symptom 1 :</label>
+                    <select class="custom-select d-block w-100" id="country" name="Symptom_1">
+                        <option>Choose...</option>
+                        {% for each in symptoms %}
+                        <option>{{ each }}</option>
+                        {% endfor %}
+                    </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="country">Symptom 2 :</label>
+                    <select class="custom-select d-block w-100" id="country" name="Symptom_2">
+                        <option value="">Choose...</option>
+                        {% for each in symptoms %}
+                        <option>{{ each }}</option>
+                        {% endfor %}
+                    </select>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="country">Symptom 3 :</label>
+                    <select class="custom-select d-block w-100" id="country" name="Symptom_3">
+                        <option value="">Choose...</option>
+                        {% for each in symptoms %}
+                        <option>{{ each }}</option>
+                        {% endfor %}
+                    </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="country">Symptom 4 :</label>
+                      <select class="custom-select d-block w-100" id="country" name="Symptom_4">
+                        <option value="">Choose...</option>
+                        {% for each in symptoms %}
+                        <option>{{ each }}</option>
+                        {% endfor %}
+                      </select>
+              </div>
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="country">Symptom 5 :</label>
+                      <select class="custom-select d-block w-100" id="country" name="Symptom_5">
+                        <option value="">Choose...</option>
+                        {% for each in symptoms %}
+                        <option>{{ each }}</option>
+                        {% endfor %}
+                      </select>
+              </div>
+            </div>
+          </div>
+          
+         <button class="btn btn-dark dp-btn mb-4" type="submit" value="submit">Check Your Disease</button>
+        
+        </form>
+      </div>
+</div>  
+        
+    
+                 
+{% endblock %}

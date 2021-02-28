@@ -1,0 +1,55 @@
+/*---------------------------------------
+      APPOINTMENT             
+  -----------------------------------------*/
+
+  #appointment {
+    
+  }
+
+  #appointment label {
+    color: #393939;
+    font-weight: 500;
+  }
+.img-responsive{
+    max-width: 100%;
+}
+  #appointment .form-control {
+    background: #f9f9f9;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.4s;
+  }
+
+  #appointment input,
+  #appointment select {
+    height: 45px;
+  }
+.hospname{
+  font-family: 'Comic Neue', cursive;
+  color: #067446;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.book-btn {
+    padding: 13px 20px 12px;
+    background-color: #343a40;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px; 
+  }
+  
+.book-btn:hover {
+      border: 1px solid #343a40;
+      background-color: transparent;
+      color: #343a40; 
+  }
+
+
